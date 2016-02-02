@@ -1,0 +1,19 @@
+@inproceedings{mahendran14understanding,
+    Author    = {A. Vedaldi and
+                 S. Mahendran and
+                 S. Tsogkas and
+                 S. Maji and
+                 B. Girshick and
+                 J. Kannala and
+                 E. Rahtu and
+                 I. Kokkinos and
+                 M. B. Blaschko and
+                 D. Weiss and
+                 B. Taskar and
+                 K. Simonyan and
+                 N. Saphra and
+                 S. Mohamed},
+    Title     = {Understanding Objects in Detail with Fine-grained Attributes},
+    Booktitle = {Proceedings of the {IEEE} Conf.
+                 on Computer Vision and Pattern Recognition ({CVPR})},
+    Year      = {2014}}

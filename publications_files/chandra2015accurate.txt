@@ -1,0 +1,7 @@
+@inproceedings{chandra2015accurate,
+  title={Accurate Human-Limb Segmentation in RGB-D Images for Intelligent Mobility Assistance Robots},
+  author={Chandra, Siddhartha and Tsogkas, Stavros and Kokkinos, Iasonas},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision Workshops},
+  pages={44--50},
+  year={2015}
+}
