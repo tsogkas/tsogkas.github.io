@@ -1,7 +1,0 @@
-@article{tsogkas2015semantic,
-  title={Semantic Part Segmentation with Deep Learning},
-  author={Tsogkas, Stavros and Kokkinos, Iasonas and Papandreou, George and Vedaldi, Andrea},
-  journal={arXiv preprint arXiv:1505.02438},
-  year={2015}
-}
-

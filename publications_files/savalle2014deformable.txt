@@ -1,7 +1,0 @@
-@article{savalle2014deformable,
-  title={Deformable Part Models with CNN Features},
-  author={Savalle, Pierre-Andr{\'e} and Tsogkas, Stavros and Papandreou, George and Kokkinos, Iasonas},
-  Booktitle = {European Conference on Computer Vision, Parts and Attributes Workshop (ECCVW 2014).},
-  Year      = {2014}
-}
-

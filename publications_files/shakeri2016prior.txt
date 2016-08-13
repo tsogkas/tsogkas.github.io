@@ -1,7 +1,0 @@
-@inproceedings{shakeri2016prior,
-    Author = {Shakeri, Mahsa and Ferrante, Enzo and Tsogkas, Stavros and Lippe, Sarah and Kadoury, Samuel and Kokkinos, Iasonas and Paragios, Nikos },
-    Title = {Prior-based Coregistration and Cosegmentation},
-    Booktitle = {International Conference on Medical Image Computing and Computer Assisted Intervention ({MICCAI})},
-    Year = {2016}
-}
-
