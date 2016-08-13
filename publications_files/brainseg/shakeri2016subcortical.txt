@@ -1,0 +1,7 @@
+@inproceedings{shakeri2016subcortical,
+    Author = {Shakeri, Mahsa and Tsogkas, Stavros and Lippe, Sarah and Kadoury, Samuel and Paragios, Nikos and Kokkinos, Iasonas},
+    Title = {Subcortical Brain Structure Segmentation Using FCNNs},
+    Booktitle = {International Symposium on Biomedical Imaging ({ISBI})},
+    Year = {2016}
+}
+
