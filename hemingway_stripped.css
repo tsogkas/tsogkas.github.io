@@ -1,0 +1,652 @@
+/*---------------------------------------------------------------------------------
+
+	This theme is a stripped down version of Anders NorAn's
+	Heminway theme.
+	More info on the Heminway theme:
+	Author URI: http://www.andersnoren.se
+	Theme URI: http://www.andersnoren.se/teman/hemingway-wordpress-theme/
+	License: GNU General Public License version 2.0
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+	All files, unless otherwise stated, are released under the GNU General Public License
+	version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+-----------------------------------------------------------------------------------
+
+	0.	CSS Reset & Clearfix
+	1.	Document Setup
+	2.  Structure
+	3.	Header
+	5.	Post Content
+	6.	Footer and Credits
+	7.	Responsive
+
+----------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------------- */
+
+html, body { margin:0 auto; padding:0; }
+
+h1, h2, h3, h4, h5, h6, p, em, img, li, ol, ul, fieldset, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	font-weight:normal;
+	font-style:normal;
+	font-size:85%;
+	line-height:1;
+	font-family:inherit;
+	text-align:left;
+}
+ol, ul { list-style:none; }
+a { outline:none; }
+
+
+/* -------------------------------------------------------------------------------- */
+/*	1. Document setup
+/* -------------------------------------------------------------------------------- */
+body {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: #F0F0F0;
+	color: #222;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+body a {
+	/*color: #1abc9c;*/
+	/*color: #03a9f4;*/
+	/*color: #7fbfd4;*/
+	/*color: #40b5ff;*/
+	/*color: #3297e9;*/
+	color: #1772d0;
+	text-decoration: none;
+}
+
+body a:hover {
+	color: #40b5ff;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+.hidden { display: none; }
+.clear { clear: both; }
+.left { float: left; }
+.right { float: right; }
+
+
+/* -------------------------------------------------------------------------------- */
+/*	2.	Structure
+/* -------------------------------------------------------------------------------- */
+.section {
+	padding: 2%;
+	position: relative;
+}
+.section.large-padding { padding: 7.5% 0; }
+.section.medium-padding { padding: 5% 0; }
+.section.small-padding { padding: 2.5% 0; }
+.section.no-padding { padding: 0; }
+.section.bg-dark { background: #1D1D1D; }
+.section.bg-dark-light { background: #262626; }
+.bg-shade {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #262626;
+}
+.section-inner {
+	width: 1040px;
+	max-width: 86%;
+	margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------------- */
+/*	3. Header
+/* -------------------------------------------------------------------------------- */
+.header-cover { overflow-y: hidden; }
+.header {
+	max-height: 250px;
+	background: no-repeat center;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	overflow:hidden;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	7. Post content
+/* -------------------------------------------------------------------------------- */
+.post-content { font-size: 1.075em; }
+.post-content a:hover { text-decoration: underline; }
+.post-content p,
+.post-content ul,
+.post-content pre {
+	line-height: 170%;
+	margin-bottom: 1.1em;
+}
+
+.post-content > *:first-child { margin-top: 0; }
+.post-content *:last-child { margin-bottom: 0; }
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+	margin: 50px 0 20px;
+	color: #444;
+	line-height: 120%;
+}
+
+.post-content h1 { font-size: 1.90em; font-weight: 700; }
+.post-content h2 { font-size: 1.5em; font-weight: 700; }
+.post-content h3 { font-size: 1.25em; font-weight: 700; }
+.post-content h4 { font-size: 1.25em; }
+.post-content h5 { font-size: 1.1em; }
+.post-content h6 {
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.post-content blockquote cite em { font-style: italic; font-weight: bold; }
+em, q {  font-style: italic;  }
+.post-content strong em,
+.post-content em strong {
+	font-weight: bold;
+	font-style: italic;
+}
+.post-content ul {
+	list-style: disc;
+	margin-left: 1.5em;
+}
+.post-content li {
+	margin-bottom: 0.5em;
+	line-height: 140%;
+}
+
+
+/* Post media --------------------------------------- */
+img.alignleft,
+.alignleft img,
+img.aligncenter,
+.aligncenter img,
+img.alignright,
+.alignright img {
+	box-sizing: border-box;
+	padding: 5px;
+	border: 1px solid #EEE;
+}
+.post-content .alignleft,
+.post-content .alignright {
+	margin-bottom: 1.2em;
+}
+.post-content .alignleft {
+	float: left;
+	margin-right: 1em;
+}
+.post-content .alignright {
+	float: right;
+	margin-left: 1em;
+}
+.post-content .aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/* -------------------------------------------------------------------------------- */
+/*	12. Footer and Credits
+/* -------------------------------------------------------------------------------- */
+.footer {
+	font-size: 0.9em;
+	margin-top: 7.5%;
+}
+.column {
+	width: 30%;
+	margin-left: 5%;
+}
+.credits.no-padding { font-size: 0.8rem; }
+.credits-inner {
+	padding: 25px 0 4%;
+	border-top: 2px solid rgba(255,255,255,0.1);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.credits,
+.credits a { color: #666; }
+.credits-left { float: left; }
+.credits-right { float: right; }
+.tothetop:hover { cursor: pointer; }
+img#wpstats { display: none; }
+
+
+/* -------------------------------------------------------------------------------- */
+/*	14. Responsive
+/* -------------------------------------------------------------------------------- */
+@media (max-width: 1040px) {
+
+	body { font-size: 16px; }
+	/* Structure --------------------------------------- */
+	.wrapper { 	margin-top: 7.5%; }
+}
+
+@media (max-width: 800px) {
+	body { font-size: 18px; }
+	/* Structure --------------------------------------- */
+	.content,
+	.sidebar {
+		width: 100%;
+		float: none;
+	}
+
+	.sidebar { display: none; }
+	.section.large-padding,
+	.section.medium-padding { padding: 40px 0; }
+	.footer { margin-top: 60px; }
+
+	/* Navigation --------------------------------------- */
+	.navigation-inner { max-width: 100%; }
+	.blog-menu { display: none; }
+	.toggle-container {
+		display: block;
+		background: #1D1D1D;
+	}
+
+	.toggle {
+		display: inline-block;
+		position: relative;
+		height: 57px;
+		width: 32px;
+		padding: 20px 0px;
+	}
+
+	.toggle:hover { cursor: pointer; }
+
+	.nav-toggle { float: left; margin-left: 7%; }
+	.search-toggle { float: right; margin-right: 7%; }
+
+	.nav-toggle:hover { cursor: pointer; }
+
+	.nav-toggle .bar {
+		display: block;
+		width: 24px;
+		height: 3px;
+		margin-top: 4px;
+		background: #666;
+	}
+
+	.nav-toggle .bar:first-child { margin-top: 0; }
+
+	.nav-toggle.active .bar { background-color: #FFF; }
+
+	.search-toggle .metal,
+	.search-toggle .glass,
+	.search-toggle .handle {
+		position: absolute;
+	}
+
+	.search-toggle .metal {
+		width: 24px;
+		height: 24px;
+		top: 14px;
+		left: 6px;
+		border-radius: 999px;
+		-moz-border-radius: 999px;
+		-webkit-border-radius: 999px;
+		background: #555;
+	}
+
+	.search-toggle .glass {
+		width: 14px;
+		height: 14px;
+		top: 19px;
+		left: 11px;
+		border-radius: 999px;
+		-moz-border-radius: 999px;
+		-webkit-border-radius: 999px;
+		background: #1D1D1D;
+	}
+
+	.search-toggle .handle {
+		height: 5px;
+		width: 14px;
+		top: 36px;
+		left: 0px;
+		background: #555;
+		border-radius: 2px 0 0 2px;
+		-moz-border-radius: 2px 0 0 2px;
+		-webkit-border-radius: 2px 0 0 2px;
+		-webkit-transform:rotate(-45deg);
+	}
+
+	.search-toggle.active .metal,
+	.search-toggle.active .handle { background: #FFF; }
+
+	.blog-search,
+	.navigation { background: #282828; }
+
+	.mobile-menu a {
+		display: block;
+		padding: 24px;
+		font-size: 12px;
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+		background: #282828;
+		display: block;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: rgba(255,255,255,0.4);
+		font-size: 13px;
+	}
+
+	.mobile-menu a:hover,
+	.mobile-menu .current-menu-item a { color: #FFF; }
+
+	.mobile-menu ul a { width: 100%; }
+
+	.mobile-menu ul a { padding-left: 40px; }
+	.mobile-menu ul ul a { padding-left: 60px; }
+	.mobile-menu ul ul ul a { padding-left: 80px; }
+	.mobile-menu ul ul ul ul a { padding-left: 100px; }
+	.mobile-menu ul ul ul ul ul a { padding-left: 120px; }
+
+	.blog-search { padding: 8%; }
+
+	.blog-search .searchform {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.blog-search #s {
+		width: 97.5%;
+		padding: 18px 100px 18px 20px;
+		background: #FFF;
+		font-family: 'Lato', sans-serif;
+		font-size: 1em;
+		color: #444;
+		border: none;
+		border-radius: 4px 0 0 4px;
+		-moz-border-radius: 4px 0 0 4px;
+		-webkit-border-radius: 4px 0 0 4px;
+		margin: 0;
+	}
+
+	.blog-search #s:focus { outline: none; }
+
+	.blog-search #searchsubmit {
+		-webkit-appearance: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 85px;
+		padding: 20px 0;
+		line-height: 1;
+		border: none;
+		margin: 0;
+		background: #1abc9c;
+		border: 1px solid #1abc9c;
+		color: #FFF;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 0.8rem;
+		font-family: 'Lato', sans-serif;
+		border-radius: 0 4px 4px 0;
+		-moz-border-radius: 0 4px 4px 0;
+		-webkit-border-radius: 0 4px 4px 0;
+	}
+
+	.blog-search #searchsubmit:hover {
+		cursor: pointer;
+		background-color: #089D80;
+		border-color: #089D80;
+	}
+
+	/* Pagination --------------------------------------- */
+
+	.archive-nav { margin-top: 60px; }
+
+
+}
+
+@media (max-width: 700px) {
+
+	body { font-size: 16px; }
+
+	/* Header --------------------------------------- */
+
+	.header.section { padding: 60px 0; }
+
+	.blog-info { padding: 20px; }
+	.blog-description:before { margin: 15px auto; }
+
+	/* Main content --------------------------------------- */
+
+	.post {
+		padding-bottom: 35px;
+		margin-bottom: 35px;
+	}
+
+	.post:last-child { padding-bottom: 0; border-bottom: none; margin-bottom: 0; }
+
+	.featured-media { margin-bottom: 25px; }
+
+	.post-header { margin-bottom: 25px; }
+
+	.post-title { margin-bottom: 12px; }
+
+	.post-meta-bottom { margin-top: 40px; }
+
+	/* Post content --------------------------------------- */
+
+	.post-content h1,
+	.post-content h2,
+	.post-content h3,
+	.post-content h4,
+	.post-content h5,
+	.post-content h6 {
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+
+	.post-content .alignleft,
+	.post-content .alignright {
+		float: none;
+		width: auto;
+		margin: 0 auto 1.2em auto;
+	}
+
+	.post-content .alignleft img,
+	.post-content .alignright img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	/* Comments --------------------------------------- */
+
+	.comments { padding-top: 40px; margin-top: 40px; }
+	.comment-respond { margin-top: 40px; }
+
+	.post + .comment-respond { padding-top: 40px; }
+
+	.comments-title, #reply-title { font-size: 1.5em; }
+	.comments-title { margin-bottom: 20px; }
+
+	.comment-meta-content { padding-top: 9px; }
+
+	.comment-actions { margin-top: 10px; }
+
+	.comment-meta .comment-actions { display: none; }
+
+	.comment-content .comment-actions {
+		display: block;
+		position: relative;
+		top: auto;
+		right: auto;
+		margin-top: 1em;
+	}
+
+	.comment-content h1,
+	.comment-content h2,
+	.comment-content h3,
+	.comment-content h4,
+	.comment-content h5,
+	.comment-content h6 {
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+
+	/* Respond --------------------------------------- */
+
+	.content form input[type="text"],
+	.content form input[type="email"],
+	.content form input.password,
+	.content form textarea,
+	.content form textarea {
+		padding: 10px;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+	}
+
+	.content #respond form input { width: 100%; }
+
+	/* Footer --------------------------------------- */
+
+	.footer { margin-top: 60px; }
+
+	.footer .column {
+		width: 100%;
+		margin-left: 0;
+		padding-top: 40px;
+		border-top: 4px solid rgba(255,255,255,0.1);
+		margin-top: 40px;
+	}
+
+	.footer .column:first-child { margin-top: 0; border-top: 0; padding-top: 0; }
+
+	.widget {
+		margin-bottom: 40px;
+		border-bottom: 4px solid rgba(255,255,255,0.1);
+		padding-bottom: 40px;
+	}
+
+	/* Credits --------------------------------------- */
+
+	.credits.section { border-top: 1px solid rgba(255,255,255,0.1); }
+
+	.credits-inner {
+		padding: 30px 0;
+		border-top: 0;
+		text-align: center;
+	}
+
+	.credits p { float: none; display: inline; }
+
+	.credits .right,
+	.credits span { display: none; }
+
+}
+
+@media (max-width: 500px) {
+
+
+	body { font-size: 15px; }
+
+	/* Header --------------------------------------- */
+
+	.header.section { padding: 30px 0; }
+
+	/* Post --------------------------------------- */
+
+	.post-title { font-size: 1.75em; }
+
+	.post-author { display: none; }
+	.post-header .date-sep:nth-of-type(2) { display: none; }
+
+	.media-caption-container {
+		position: static;
+		top: auto;
+		left: auto;
+		width: 100%;
+		margin: -3px 0 0 0;
+	}
+
+	.media-caption {
+		padding: 10px;
+		border-radius: 0 0 4px 4px;
+		-moz-border-radius: 0 0 4px 4px;
+		-webkit-border-radius: 0 0 4px 4px;
+		background: #EEE;
+		color: #666;
+		width: 100%;
+	}
+
+	.media-caption:hover { background: #EEE; color: #666; }
+
+	/* Single post --------------------------------------- */
+
+	.post-cat-tags p { display: block; }
+	.post-cat-tags p:last-child { margin-left: 0; margin-top: 10px; }
+
+	.single .post-nav { padding: 0; font-size: 1em; }
+
+	.single .post-nav a,
+	.single .post-nav .post-nav-newer {
+		max-width: 100%;
+		float: none;
+		text-align: left;
+		padding: 20px 0;
+	}
+
+	.single .post-nav .post-nav-newer { border-top: 1px solid #EEE; }
+	.single .post-nav .post-nav-newer h5 { text-align: left; }
+
+	/* Post formats --------------------------------------- */
+
+	.blog .format-quote .post-content,
+	.archive .format-quote .post-content,
+	.search .format-quote .post-content {
+		padding: 20px;
+	}
+
+	.blog .format-quote .post-content blockquote,
+	.archive .format-quote .post-content blockquote,
+	.search .format-quote .post-content blockquote {
+		font-size: 1em;
+	}
+
+	.blog .format-quote .post-content blockquote cite,
+	.archive .format-quote .post-content blockquote cite,
+	.search .format-quote .post-content blockquote cite {
+		font-size: 0.75rem;
+	}
+
+	/* Comments --------------------------------------- */
+
+	.comment-meta-content { margin-left: 65px; }
+
+	.comment-content { margin-left: 0; }
+
+	/* Pagination --------------------------------------- */
+
+	.archive-nav { margin-top: 40px; }
+
+	.archive-nav a { font-size: 0.8rem; }
+
+	.post-nav span,
+	.archive-nav span,
+	.comment-nav-below span { display: none; }
+
+	/* Footer --------------------------------------- */
+
+	.footer { margin-top: 40px; }
+
+}
