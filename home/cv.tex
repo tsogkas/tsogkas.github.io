@@ -13,18 +13,20 @@
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
- \moveleft.5\hoffset\centerline{92295 Grande Voie des Vignes, Ch\^atenay-Malabry, France}
- \moveleft.5\hoffset\centerline{\url{http://cvn.ecp.fr/personnel/tsogkas/}}
- \moveleft.5\hoffset\centerline{email: stavros.tsogkas@centralesupelec.fr}
+ \moveleft.5\hoffset\centerline{6 King's College Rd., Toronto, Ontario, Canada}
+ \moveleft.5\hoffset\centerline{\url{http://tsogkas.github.io}}
+ \moveleft.5\hoffset\centerline{email: tsogkas@cs.toronto.edu}
 
 
 \begin{resume}
  
-\section{RESEARCH INTERESTS} Computer vision (shape analysis, semantic segmentation, 
-fine-grained recognition, object detection), deep learning.
+\section{RESEARCH INTERESTS} Computer vision (shape analysis, semantic segmentation, object detection), deep learning.
 \newline
 
 \section{EMPLOYMENT}
+\textbf{University of Toronto} \hfill Oct. 2016 - present\\
+Postdoctoral researcher
+
 \textbf{CentraleSup\'elec} \hfill Jan. 2016 - Aug. 2016\\
 Research engineer (CVN lab)
 
@@ -44,7 +46,9 @@ Project: Semantic segmentation of object parts. \\ Supervisor: Andrea Vedaldi.
 
 \section{PUBLICATIONS} 
 	\begin{itemize}
-	\item  Sub-cortical Brain Structure Segmentation Using F-CNNs, \emph{ISBI 2016} \textbf{(oral)}\\
+	\item  Prior-based Coregistration and Cosegmentation, \emph{MICCAI 2016}\\
+		  \textbf{M. Shakeri*}, \textbf{E. Ferrante*}, S. Tsogkas, S. Lippe, S. Kadoury, I. Kokkinos,  N. Paragios (* denotes equal contribution)   
+	\item  Subcortical Brain Structure Segmentation Using FCNNs, \emph{ISBI 2016} \textbf{(oral)}\\
 		  \textbf{M. Shakeri*}, \textbf{S. Tsogkas*}, E. Ferrante, S. Lippe, S. Kadoury, N. Paragios, I. Kokkinos (* denotes equal contribution)   
 	\item   Accurate Human-Limb Segmentation in RGB-D images for Intelligent Mobility Assistance Robots\\
 		   \emph{ICCV 2015 $3^{rd}$ Workshop on Assistive Computer Vision and Robotics}\\
@@ -61,7 +65,7 @@ Project: Semantic segmentation of object parts. \\ Supervisor: Andrea Vedaldi.
 		  \textbf{S. Tsogkas}, I. Kokkinos
 	\end{itemize}
 
-\section{SKILLS} MATLAB, C/C++, Latex, Caffe, MatConvNet. 
+\section{SKILLS} MATLAB, C/C++, Lua, Latex, Caffe, MatConvNet, Torch. 
 \newline
 
 \section{TEACHING} Teaching assistant in "Computer Vision" and "Signal Processing" \hfill ECP, 2011-2012 \\(taught by Iasonas Kokkinos)  	
@@ -76,37 +80,6 @@ Project: Semantic segmentation of object parts. \\ Supervisor: Andrea Vedaldi.
  \section{LANGUAGES} English (fluent), French (proficient), Greek (native).
  \section{INTERESTS} Piano, bass guitar, poker, board games, travelling.
  
-  \section{RESEARCH STATEMENT} My PhD focuses on exploiting mid-level representations for object recognition. These representations provide a middle ground between bottom-up and top-down processing, are more robust than pixel-level features and can be shared among different object classes. The mid-level constructs we consider in the works described below are medial axes, object parts, and convolutional features.
- 
-In~[1] we successfully transferred ideas from learning-based boundary detection to the detection of medial axes in RGB images. Our method is still the state-of-the-art for this task, and we have been examining a variation based on random forests, that cuts down the computation cost dramatically. We have also improved deformable part models (DPMs) using bottom-up segmentation information. In~[2] we employed soft segmentation masks to ``clean up'' HOG features, separating them into foreground and background components; training DPMs with these enhanced features leads to better detection performance. In~[3] we showed that the prediction of certain attributes can benefit substantially from accurate part detection. In that work I proposed and implemented a coarse-to-fine approach using DPMs, that speeds up part detection 4-7 times, with negligible performance loss.
-
-During the last year I have been focusing on deep learning for object detection and fine-grained semantic segmentation. In~[4], we integrated CNN features in the DPM pipeline obtaining a $14.5\%$ absolute gain in mean average precision (mAP) on the PASCAL VOC 2007 dataset, while keeping computation time low, despite the increased feature dimensionality. In my latest project I investigate the use of CNNs for semantic segmentation of object parts~[5]. Specifically, we use a combination of fully convolutional CNNs and fully-connected CRFs to achieve state-of-the-art performance for part segmentation of faces and pedestrians. On top of this combination we train a Restricted Boltzmann Machine and use it as a shape prior, to guarantee plausible part segmentations.
-
-We have also used CNN features to successfully tackle semantic part segmentation using diverse type of input data and architectures. In~[6] we perform human limb segmentation exploiting both RGB and depth maps (captured from a Kinect sensor) in a single training and testing framework; the long-term goal is to use this framework as part of a complete robotic platform for mobility assistance of elderly people. Finally, in~[7] we design a new architecture for the segmentation of sub-cortical structures in 3D brain MRI volumes, and combine it with a MRF to enforce volumetric homogeneity, achieving state-of-the-art performance in two brain segmentation datasets.  
-
-\begin{thebibliography}{7}
-\bibitem[1]{tsogkas2012learning} S. Tsogkas and I. Kokkinos. Learning-based symmetry detection in natural images, \emph{ECCV 2012}.
-
-\bibitem[2]{trulls2014segmentation}  E. Trulls, S. Tsogkas, I. Kokkinos, A. Sanfeliu, and F. Moreno-Noguer.
-Segmentation-aware deformable part models, \emph{CVPR 2014}.
-
-\bibitem[3]{vedaldi2014understanding} A. Vedaldi, S. Mahendran, S. Tsogkas, S. Maji, B. Girshick, J. Kannala,
-E. Rahtu, I. Kokkinos, M. B. Blaschko, D. Weiss, B. Taskar, K. Simonyan,
-N. Saphra, and S. Mohamed. Understanding objects in detail with fine-
-grained attributes, \emph{CVPR 2014}.
-
-\bibitem[4]{savalle2014deformable} P.-A. Savalle, S. Tsogkas, G. Papandreou, and I. Kokkinos. Deformable
-part models with cnn features, \emph{ECCV, Parts and Attributes Workshop
- (ECCVW 2014)}.
-
-\bibitem[5]{tsogkas2015semantic} S. Tsogkas, I. Kokkinos, G. Papandreou, and A. Vedaldi. Semantic part
-segmentation with deep learning, \emph{arXiv preprint arXiv:1505.02438, 2015}.
-
-\bibitem[6]{chandra2015accurate} S. Chandra, S. Tsogkas, I. Kokkinos. Accurate Human-Limb Segmentation in RGB-D images for Intelligent Mobility Assistance Robots, \emph{ICCV 2015 $3^{rd}$ Workshop on Assistive Computer Vision and Robotics}.
-
-\bibitem[7]{shakeri2015subcortical} M. Shakeri*, S. Tsogkas*, E. Ferrante, S. Lippe, S. Kadoury, N. Paragios, I. Kokkinos, Sub-cortical Brain Structure Segmentation Using F-CNNs, \emph{ISBI 2016}.
-
-\end{thebibliography}
  
 \end{resume}
 \end{document}
