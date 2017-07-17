@@ -116,14 +116,21 @@ img {
 /* -------------------------------------------------------------------------------- */
 .header-cover { overflow-y: hidden; }  
 .header {
-	  min-height: 500px;    
+	min-height: 350px;    
 	background-size: cover;
 	-moz-background-size: cover; 
 	-webkit-background-size: cover; 
 	background-repeat: no-repeat;
-	background-position: center -50px;
+	background-position: center -40px;
 	overflow:hidden; 
 } 
+ /* .header:hover {
+	min-height: 800px;    
+	background-size: cover;
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat;
+}  */
 
 /* -------------------------------------------------------------------------------- */
 /*	7. Post content
