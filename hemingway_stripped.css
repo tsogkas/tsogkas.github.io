@@ -114,16 +114,16 @@ img {
 /* -------------------------------------------------------------------------------- */
 /*	3. Header
 /* -------------------------------------------------------------------------------- */
-.header-cover { overflow-y: hidden; }
+.header-cover { overflow-y: hidden; }  
 .header {
-	max-height: 250px;
-	background: no-repeat center;
+	  min-height: 500px;    
 	background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	overflow:hidden;
-}
-
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center -50px;
+	overflow:hidden; 
+} 
 
 /* -------------------------------------------------------------------------------- */
 /*	7. Post content
