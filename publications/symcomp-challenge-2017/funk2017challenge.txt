@@ -1,0 +1,6 @@
+@inproceedings{funk2017challenge,
+	title={2017 ICCV Challenge: Detecting Symmetry in the Wild},
+  	author={Funk, Christopher and Lee, Seungkyu and Oswald, Martin R and Tsogkas, Stavros and Shen, Wei and Cohen, Andrea and Dickinson, Sven and Liu, Yanxi}
+    booktitle = {Detecting Symmetry in the Wild Workshop (ICCV)},
+    year = {2017}
+}

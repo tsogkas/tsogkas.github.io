@@ -41,9 +41,9 @@
 		font-size: 0.9em;
 	}
 	conference {
-	font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	font-size: 0.9em;
-	font-style: italic;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 0.9em;
+		font-style: italic;
 	}
 	extras {
 	font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -58,25 +58,22 @@
 		height:140px;
 	}
 	</style>
+	
 	<!--/Customizer CSS-->
 </head>
 
 <body>
 	<!-- <div class="header section" style="background-image: url(home/icons/fedora_blue_banner.png);"> -->
-	<div class="header section" style="background-image: url(home/quisommesnous.jpg);";>
-		<!-- <div class="header-inner section-inner">
-			<div class="left">
-				<a href='https://www.utoronto.ca/'>
-					<img src='home/icons/uoft-logo-inverted.png' style='height:120px'>
-				</a>
-			</div>
-			<div class='right'>
-				<a href='http://www.cs.toronto.edu/vis/'>
-					<img src='home/icons/uoft_vision_logo_inverted_blue.png' style='height:120px'>
-				</a>
-			</div>
-		</div> -->
-	</div>
+	<!-- <figure class="imghvr-zoom-out">
+		<img src="home/quisommesnous.jpg">
+		<figcaption>
+			// Hover Content
+		</figcaption>
+	</figure>		 -->
+	<!-- <div class="zoomout frame">
+		<img src="home/quisommesnous.jpg"/>
+	</div>  -->
+	<div class="header section" style="background-image: url(home/quisommesnous.jpg)"></div>
 
 	<div class="section-inner">
 		<div class="post-content">
@@ -124,11 +121,17 @@
 			<!-- ==================== Research interests ========================= -->
 			<h3>Research Interests</h3>
 			<p>
-				I am interested in exploring the use of mid-level elements, such as medial
+				My research interests are in the broad areas of computer vision 
+				and machine learning, with a focus on deep learning. 
+				I am particularly interested in the use of mid-level 
+				representations to bridge the gap between bottom-up and top-down 
+				processing and solve problems such as object detection, segmentation and grouping. 
+				I have devoted a large part of my research on recovering such representations, medial axes and object parts in particular, in natural and medical images.
+				<!-- I am interested in exploring the use of mid-level elements, such as medial
 				axes and object parts, to improve detection, segmentation
 				and fine-grain recognition of objects.
 				In my latest projects, I have also worked on developing deep learning systems
-				for semantic segmentation in natural and medical images.
+				for semantic segmentation in natural and medical images. -->
 			</p>
 
 			<!-- ===========================  News ================================ -->
@@ -145,6 +148,23 @@
 			<!-- =========================  Publications ========================= -->
 			<h2>Publications</h2>
 			<p style="clear:left">
+					<img class="thumbnail" src="publications/symcomp-challenge-2017/symcomp-teaser.jpg" style="height:125px;">
+					<papertitle><a href="/home/tsogkas/tsogkas.github.io/publications/symcomp-challenge-2017/sym_challenge_main.pdf" id="amat">2017 ICCV Challenge: Detecting Symmetry in the Wild (editorial)</a></papertitle><br>
+					<authors>
+						<a href="https://cfunk1210.github.io/"> C. Funk*</a>,
+						<a href="https://sites.google.com/site/seungkyuresearch/"> S. Lee*</a>,
+						<a href="http://people.inf.ethz.ch/moswald/"> M. Oswald*</a>,
+						<b>S. Tsogkas*</b>, 
+						<a href="http://wei-shen.weebly.com/"> W. Shen</a>,
+						<a href="http://people.inf.ethz.ch/acohen/"> A. Cohen</a>,
+						<a href="http://www.cs.toronto.edu/~sven/">S. Dickinson</a>,
+						<a href="http://www.cse.psu.edu/~yul11/">Y. Liu</a><br>
+					</authors>
+					<conference>Detecting Symmetry in the Wild Workshop (In conjunction with ICCV 2017).</conference> <br>
+					<em>*Authors contributed equally</em> <br>
+			</p>
+
+			<p style="clear:left">
 				<img class="thumbnail" src="publications/amat/amat-teaser.png" style="height:107px;">
 				<papertitle><a href="https://arxiv.org/pdf/1703.08628.pdf" id="amat">AMAT: Medial Axis Transform for Natural Images</a></papertitle><br>
 				<authors>
@@ -152,9 +172,9 @@
 				</authors>
 				<conference>International Conference on Computer Vision (ICCV 2017).</conference> <br>
 				<extras>
-					<a href="https://github.com/tsogkas/amat">code</a> /
-					<a href="publications/amat/tsogkas2017amat.txt">bibtex</a> /
-					<a href="publications/amat/amat-demo-fast.webm">video</a> /
+					<a href="https://github.com/tsogkas/amat">code</a> |
+					<a href="publications/amat/tsogkas2017amat.txt">bibtex</a> |
+					<a href="publications/amat/amat-demo-fast.webm">video</a> |
 					<a href="http://slides.com/tsogkas/amat#/">slides</a>
 				</extras>
 			</p>
@@ -192,9 +212,9 @@
 				<conference>International Symposium on Biomedical Imaging (ISBI 2016) - <font color="red"><b>oral</b></font>.</conference> <br>
 				<em>*Authors contributed equally</em> <br>
 				<extras>
-					<a href="https://github.com/tsogkas/brainseg"> code </a> /
-					<a href="publications/brainseg/subcortical_slides.pdf"> slides (pdf) </a> /
-					<a href="publications/brainseg/subcortical_slides.odp"> slides (odp) </a> /
+					<a href="https://github.com/tsogkas/brainseg"> code </a> |
+					<a href="publications/brainseg/subcortical_slides.pdf"> slides (pdf) </a> |
+					<a href="publications/brainseg/subcortical_slides.odp"> slides (odp) </a> |
 					<a href="publications/brainseg/shakeri2016subcortical.txt"> bibtex </a>
 				</extras>
 			</p>
@@ -208,7 +228,7 @@
 				</authors>
 				<conference>Third Workshop on Assistive Computer Vision and Robotics (In conjunction with ICCV 2015).</conference> <br>
 				<extras>
-					<a href="publications/limbseg/chandra2015accurate_poster.pdf"> poster /
+					<a href="publications/limbseg/chandra2015accurate_poster.pdf"> poster </a> |
 					<a href="publications/limbseg/chandra2015accurate.txt"> bibtex </a>
 			</extras>
 			</p>
@@ -235,7 +255,7 @@
 				</authors>
 				<conference>European Conf. on Computer Vision, Parts and Attributes Workshop (ECCVW 2014).</conference> <br>
 				<extras>
-					<a href="publications/dpmcnn/dpm_cnn_poster.pptx">poster</a> /
+					<a href="publications/dpmcnn/dpm_cnn_poster.pptx">poster</a> |
 					<a href="publications/dpmcnn/savalle2014deformable.txt">bibtex</a>
 				</extras>
 			</p>
@@ -251,7 +271,7 @@
 				</authors>
 				<conference>Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR 2014).</conference> <br>
 				<extras>
-					<a href="http://www.iri.upc.edu/people/etrulls/posters/cvpr14.pdf"> poster </a> /
+					<a href="http://www.iri.upc.edu/people/etrulls/posters/cvpr14.pdf"> poster </a> |
 					<a href="http://www.iri.upc.edu/people/etrulls/bibref/cvpr14.txt">bibtex</a>
 				</extras>
 			</p>
@@ -277,8 +297,9 @@
 				</authors><br>
 				<conference>Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR 2014).</conference><br>
 				<extras>
-					<a href="https://github.com/tsogkas/oid_1.0"> code </a> / <a href="http://www.robots.ox.ac.uk/~vgg/data/oid/"> data </a> /
-					<a href="publications/oid/vedaldi14understanding_poster.pdf"> poster </a> /
+					<a href="https://github.com/tsogkas/oid_1.0"> code </a> | 
+					<a href="http://www.robots.ox.ac.uk/~vgg/data/oid/"> data </a> |
+					<a href="publications/oid/vedaldi14understanding_poster.pdf"> poster </a> |
 					<a href="publications/oid/vedaldi14understanding.txt"> bibtex </a>
 				</extras>
 			</p>
@@ -292,15 +313,15 @@
 				</authors>
 				<conference>Proc. European Conf. on Computer Vision (ECCV 2012).</conference> <br>
 				<extras>
-					<a href="https://github.com/tsogkas/spb-mil">code</a> /
-					<a href="publications/symmetry-mil/SYMMAX300.zip"> data </a> /
-					<a href="publications/symmetry-mil/tsogkas2012learning-poster.pdf"> poster </a> /
+					<a href="https://github.com/tsogkas/spb-mil">code</a> |
+					<a href="publications/symmetry-mil/SYMMAX300.zip"> data </a> |
+					<a href="publications/symmetry-mil/tsogkas2012learning-poster.pdf"> poster </a> |
 					<a href="publications/symmetry-mil/tsogkas2012learning.txt"> bibtex </a>
 				</extras>
 			</p>
 
 			<p style="clear:left">
-				<h2>PhD thesis</h2>
+				<h2>Ph.D thesis</h2>
 				<img class="thumbnail" src="publications/thesis/thesis-teaser.png" style="height:110px;">
 				<papertitle><a href="publications/thesis/Thesis.pdf" id="thesis">Mid-level Representations for Modeling Objects</a></papertitle><br>
 				<em>PhD Thesis, Advisor: <a href="http://www0.cs.ucl.ac.uk/staff/I.Kokkinos/">I. Kokkinos</a></em> <br>

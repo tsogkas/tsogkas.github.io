@@ -123,14 +123,19 @@ img {
 	background-repeat: no-repeat;
 	background-position: center -40px;
 	overflow:hidden; 
-} 
+	-webkit-transition: all 3s ease; 
+	-moz-transition: all 3s ease; 
+	-ms-transition: all 3s ease; 
+	transition: all 3s ease; 
+}  
 .header:hover {
-	min-height: 800px;    
+    min-height: 800px;
 	background-size: cover;
 	-moz-background-size: cover; 
 	-webkit-background-size: cover; 
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; 
 } 
+
 
 /* -------------------------------------------------------------------------------- */
 /*	7. Post content
