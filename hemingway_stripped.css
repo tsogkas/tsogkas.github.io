@@ -193,7 +193,7 @@ img.aligncenter,
 img.alignright,
 .alignright img {
 	box-sizing: border-box;
-	padding: 5px;
+	padding: 0px;
 	border: 1px solid #EEE;
 }
 .post-content .alignleft,

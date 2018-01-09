@@ -5,8 +5,8 @@
 <head>
 	<!-- Say hello to big brother -->
 	<script>
-  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]//function(){
+  		(i[r].q=i[r].q//[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
@@ -28,13 +28,13 @@
 		padding-right: 0.3em;
 	}
 	heading {
-	font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	font-size: 22px;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 22px;
 	}
 	papertitle {
-	font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	font-size: 1.1em;
-	font-weight: bold;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1.1em;
+		font-weight: bold;
 	}
 	authors {
 		font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -46,8 +46,8 @@
 		font-style: italic;
 	}
 	extras {
-	font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	font-size: 0.9em;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 0.9em;
 	}
 	.thumbnail {
 		float: left;
@@ -57,67 +57,61 @@
 		width: 150px;
 		height:140px;
 	}
+	.img-circle {border-radius: 50%;}
 	</style>
 	
 	<!--/Customizer CSS-->
 </head>
 
-<body>
-	<!-- <div class="header section" style="background-image: url(home/icons/fedora_blue_banner.png);"> -->
-	<!-- <figure class="imghvr-zoom-out">
-		<img src="home/quisommesnous.jpg">
-		<figcaption>
-			// Hover Content
-		</figcaption>
-	</figure>		 -->
-	<!-- <div class="zoomout frame">
-		<img src="home/quisommesnous.jpg"/>
-	</div>  -->
+<body>	
+	<!-- Profile photo -->
 	<div class="header section" style="background-image: url(home/quisommesnous.jpg)"></div>
 
 	<div class="section-inner">
 		<div class="post-content">
 			<div class="alignleft">
-					<img class="border=0; alignleft" src="home/profile_by_vaggos.jpg" width="300"/><br>
-<!--					<em>Photo credit: <a href="http://cvn.ecp.fr/personnel/eferrante/">Enzo Ferrante</a></em>-->
+				<img class="img-circle" src="home/profile_by_vaggos_square.jpg" width="300"/><br>
 			</div>
 
 			<!-- ===========================  Name and links ================================ -->
-			<h1>
-				<name>Stavros Tsogkas</name>
-					<!--  All black icons -->
-					<!-- <a href="mailto:statsogk@gmail.com"> <img src="home/icons/email-icon-black2.png" width="25" title="email"/> </a> /
-					<a href="home/cv.pdf"> <img src="home/icons/cv-icon7.png" width="25" title='CV'/> </a> /
-					<a href="https://github.com/tsogkas"> <img src="home/icons/github-logo-icon-0.png" width="25" title='github'/> </a> /
-					<a href="https://scholar.google.fr/citations?user=4hC_FYoAAAAJ&hl=en&oi=ao"> <img src="home/icons/GoogleScholar.png" width="25" title='gscholar'/>  </a> /
-					<a href="https://www.linkedin.com/in/tsogkas"> <img src="home/icons/linkedin-icon-black.png" width="25" title='LinkedIn'/> </a> -->
+			<h1 class="aligncenter"><name>Stavros Tsogkas</name></h1>
 
-					<!-- Color icons -->
-<!--					<a href="mailto:statsogk@gmail.com"> <img src="home/icons/Gmail-icon2.png" width="25" title="email"/> </a> /-->
-					<a href="home/cv.pdf"> <img src="home/icons/cv-icon7.png" width="23" title='CV'/> </a> /
-					<a href="https://github.com/tsogkas"> <img src="home/icons/github-icon-color.png" width="25" title='github'/> </a> /
-					<a href="https://scholar.google.fr/citations?user=4hC_FYoAAAAJ&hl=en&oi=ao"> <img src="home/icons/gscholar-icon-color-hat.jpg" width="25" title='gscholar'/></a> /
-					<a href="https://www.linkedin.com/in/tsogkas"> <img src="home/icons/LinkedIn-Badge.png" width="23" title='LinkedIn'/> </a> <br>
-			</h1>
-
-			<p>
 			<!-- ===========================  Contact info ================================ -->
-			<b>Email:</b> <font face="courier"> tsogkas[at]cs.toronto.edu </font> <br>
-			<b>Address:</b> 6 King's College Rd., M5S 3G4, Toronto, Ontario, Canada<br>
-			<b>Office:</b> PT 398B</font>
+			<p class="aligncenter">
+				<font face="courier"> tsogkas[at]cs.toronto.edu </font> <br>
+				6 King's College Rd., M5S 3G4, Toronto, Ontario, Canada
+				, Office PT 398B
 			</p>
+
+			<!-- ===========================  Info Links ================================ -->
+			<p class="aligncenter" style="font-size:1em;" >
+				<!--  All black icons -->
+				<a href="home/cv.pdf"> <img src="home/icons/cv-icon7.png" width="20" title='CV'/> </a> /
+				<a href="https://github.com/tsogkas"> <img src="home/icons/github-logo-icon-0.png" width="20" title='github'/> </a> /
+				<a href="https://scholar.google.fr/citations?user=4hC_FYoAAAAJ&hl=en&oi=ao"> <img src="home/icons/GoogleScholar.png" width="20" title='gscholar'/>  </a> /
+				<a href="https://www.linkedin.com/in/tsogkas"> <img src="home/icons/linkedin-icon-black.png" width="20" title='LinkedIn'/> </a> 
+				
+				<!--
+				<a href="home/cv.pdf"> <img src="home/icons/cv-icon7.png" width="20" title='CV'/> </a> /
+				<a href="https://github.com/tsogkas"> <img src="home/icons/github-icon-color.png" width="22" title='github'/> </a> /
+				<a href="https://scholar.google.fr/citations?user=4hC_FYoAAAAJ&hl=en&oi=ao"> <img src="home/icons/gscholar-icon.png" width="20" title='gscholar'/></a> /
+				<a href="https://www.linkedin.com/in/tsogkas"> <img src="home/icons/LinkedIn-Badge.png" width="20" title='LinkedIn'/> </a> <br>				
+				-->
+			</p>
+
+			
 			<!-- ===========================  Bio ================================ -->
-			<p>
+			<p class="aligncenter">
 				I am a postdoctoral researcher at the <a href="https://www.utoronto.ca/" >University of Toronto</a>
-				working with <a href="http://www.cs.toronto.edu/~sven/">Sven Dickinson</a>. <br>
+				working with <a href="http://www.cs.toronto.edu/~sven/">Sven Dickinson</a>.
 				<!-- <a href="https://vimeo.com/46106624">world's most beautiful city</a> -->
 				Before joining UofT I spent five years
 				as a PhD student and research engineer at <a href="http://www.ecp.fr/">CentraleSupélec</a>,
-				where I was advised by <a href="http://www0.cs.ucl.ac.uk/staff/I.Kokkinos/">Iasonas Kokkinos</a>.<br>
-				My alma mater is the <a href="http://www.ece.ntua.gr/">National Technical University of Athens</a>.
+				where I was advised by <a href="http://www0.cs.ucl.ac.uk/staff/I.Kokkinos/">Iasonas Kokkinos</a>.
+				My alma mater is the <a href="http://www.ece.ntua.gr/">National Technical University of Athens</a>.				
 			</p>
-			<div class=clear></div>
 
+			<div class="clear"></div>
 			<!-- ==================== Research interests ========================= -->
 			<h3>Research Interests</h3>
 			<p>
@@ -172,9 +166,9 @@
 				</authors>
 				<conference>International Conference on Computer Vision (ICCV 2017).</conference> <br>
 				<extras>
-					<a href="https://github.com/tsogkas/amat">code</a> |
-					<a href="publications/amat/tsogkas2017amat.txt">bibtex</a> |
-					<a href="publications/amat/amat-demo-fast.webm">video</a> |
+					<a href="https://github.com/tsogkas/amat">code</a> /
+					<a href="publications/amat/tsogkas2017amat.txt">bibtex</a> /
+					<a href="publications/amat/amat-demo-fast.webm">video</a> /
 					<a href="http://slides.com/tsogkas/amat#/">slides</a>
 				</extras>
 			</p>
@@ -212,9 +206,9 @@
 				<conference>International Symposium on Biomedical Imaging (ISBI 2016) - <font color="red"><b>oral</b></font>.</conference> <br>
 				<em>*Authors contributed equally</em> <br>
 				<extras>
-					<a href="https://github.com/tsogkas/brainseg"> code </a> |
-					<a href="publications/brainseg/subcortical_slides.pdf"> slides (pdf) </a> |
-					<a href="publications/brainseg/subcortical_slides.odp"> slides (odp) </a> |
+					<a href="https://github.com/tsogkas/brainseg"> code </a> /
+					<a href="publications/brainseg/subcortical_slides.pdf"> slides (pdf) </a> /
+					<a href="publications/brainseg/subcortical_slides.odp"> slides (odp) </a> /
 					<a href="publications/brainseg/shakeri2016subcortical.txt"> bibtex </a>
 				</extras>
 			</p>
@@ -228,7 +222,7 @@
 				</authors>
 				<conference>Third Workshop on Assistive Computer Vision and Robotics (In conjunction with ICCV 2015).</conference> <br>
 				<extras>
-					<a href="publications/limbseg/chandra2015accurate_poster.pdf"> poster </a> |
+					<a href="publications/limbseg/chandra2015accurate_poster.pdf"> poster </a> /
 					<a href="publications/limbseg/chandra2015accurate.txt"> bibtex </a>
 			</extras>
 			</p>
@@ -255,7 +249,7 @@
 				</authors>
 				<conference>European Conf. on Computer Vision, Parts and Attributes Workshop (ECCVW 2014).</conference> <br>
 				<extras>
-					<a href="publications/dpmcnn/dpm_cnn_poster.pptx">poster</a> |
+					<a href="publications/dpmcnn/dpm_cnn_poster.pptx">poster</a> /
 					<a href="publications/dpmcnn/savalle2014deformable.txt">bibtex</a>
 				</extras>
 			</p>
@@ -271,7 +265,7 @@
 				</authors>
 				<conference>Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR 2014).</conference> <br>
 				<extras>
-					<a href="http://www.iri.upc.edu/people/etrulls/posters/cvpr14.pdf"> poster </a> |
+					<a href="http://www.iri.upc.edu/people/etrulls/posters/cvpr14.pdf"> poster </a> /
 					<a href="http://www.iri.upc.edu/people/etrulls/bibref/cvpr14.txt">bibtex</a>
 				</extras>
 			</p>
@@ -297,9 +291,9 @@
 				</authors><br>
 				<conference>Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR 2014).</conference><br>
 				<extras>
-					<a href="https://github.com/tsogkas/oid_1.0"> code </a> | 
-					<a href="http://www.robots.ox.ac.uk/~vgg/data/oid/"> data </a> |
-					<a href="publications/oid/vedaldi14understanding_poster.pdf"> poster </a> |
+					<a href="https://github.com/tsogkas/oid_1.0"> code </a> / 
+					<a href="http://www.robots.ox.ac.uk/~vgg/data/oid/"> data </a> /
+					<a href="publications/oid/vedaldi14understanding_poster.pdf"> poster </a> /
 					<a href="publications/oid/vedaldi14understanding.txt"> bibtex </a>
 				</extras>
 			</p>
@@ -313,9 +307,9 @@
 				</authors>
 				<conference>Proc. European Conf. on Computer Vision (ECCV 2012).</conference> <br>
 				<extras>
-					<a href="https://github.com/tsogkas/spb-mil">code</a> |
-					<a href="publications/symmetry-mil/SYMMAX300.zip"> data </a> |
-					<a href="publications/symmetry-mil/tsogkas2012learning-poster.pdf"> poster </a> |
+					<a href="https://github.com/tsogkas/spb-mil">code</a> /
+					<a href="publications/symmetry-mil/SYMMAX300.zip"> data </a> /
+					<a href="publications/symmetry-mil/tsogkas2012learning-poster.pdf"> poster </a> /
 					<a href="publications/symmetry-mil/tsogkas2012learning.txt"> bibtex </a>
 				</extras>
 			</p>
