@@ -1,7 +1,6 @@
-@article{wang2018deepflux,
+@inproceedings{wang2018deepflux,
     Author = {Wang, Yukang and Xu, Yongchao and Tsogkas, Stavros and Bai, Xiang and Dickinson, Sven and Siddiqi, Kaleem},
     Title = {DeepFlux for Skeletong in the Wild},
-    Journal = {arXiv preprint arXiv:1811.12608},
-    Year = {2018}
+    Booktitle = {Proceedings of the {IEEE} Conf. on Computer Vision and Pattern Recognition ({CVPR})},
+    Year      = {2018}
 }
-
