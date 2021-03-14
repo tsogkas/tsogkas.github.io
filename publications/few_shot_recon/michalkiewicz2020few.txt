@@ -1,0 +1,6 @@
+@article{michalkiewicz2020few,
+  title={Few-Shot Single-View 3D Reconstruction with Compositional Priors},
+  author={Michalkiewicz, Mateusz and Parisot, Sarah and Tsogkas, Stavros and Baktashmotlagh, Mahsa and Eriksson, Anders and Belilovsky, Eugene},
+  journal={ECCV},
+  year={2020}
+}
