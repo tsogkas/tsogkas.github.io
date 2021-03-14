@@ -1,3 +1,0 @@
-- [] Add Greek version of name?
-- [] Replace link icons with text (scholar, cv etc)?
-- [] Make teaser borders more beautiful.
